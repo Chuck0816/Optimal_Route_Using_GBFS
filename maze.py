@@ -1,6 +1,22 @@
 # Depth First Search uses the stack structure while the Breath First Search uses the queue strucuture.
 
 ### First in Last out.
+       o(0)                           
+     /   \
+    o(1)  o(2)
+   /       \
+  o(3)      o(4)    
+Start with a Frontier with the initial state
+Start with an empty explored set 
+If the frontier is empty, no solution
+Remove a node from the frontier
+If the node contains the end state, return 
+Add the node to the explored set
+Expand the node, add the node to the frontier if they are in neither frontier or explored state. 
+
+
+
+
 '''
 class StackFrontier():
     def __init__(self):
